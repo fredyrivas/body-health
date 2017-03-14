@@ -1,0 +1,347 @@
+/*IPHONE-----------------------------------------------------------------------------------------------*/
+
+@mixin moviles (){
+
+  .menu-section {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .body-health-logo img{
+    width: 130px;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+    img{
+      width: 20px;
+    }
+  }
+
+  .menu-right{
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 100%;
+  }
+
+  .menu-social{
+    position: absolute;
+    margin-bottom: 3px;
+    margin-top: 13px;
+    top:190px;
+    margin-left: 5px;
+
+    li{
+      margin-left: 10px;
+    }
+  }
+
+
+  .menu-general {
+
+    margin-left: 0;
+
+    li {
+      display: block;
+      margin-left: 0;
+      padding: 5px 0 5px 15px;
+      text-align: left;
+      width: 250px;
+      border-top: 1px solid #d0cad0;
+
+    }
+
+    .tohide{
+      display: none;
+    }
+
+  }
+
+  .menu-general li:nth-child(7){
+    border-bottom: 1px solid #d0cad0;
+  }
+
+
+  .size-1-2{
+    font-size: 1rem;
+  }
+  .size-1-1{
+    font-size: .9rem;
+  }
+  .size-1-0{
+    font-size: .8rem;
+  }
+  .size-0-9{
+    font-size: .7rem;
+  }
+
+  .home-section .home-content-wrapper p{
+    line-height: 1rem;
+  }
+  .home-section .home-content-wrapper p .home-text-1{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+  .home-section .home-content-wrapper p .home-text-2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .home-section .home-content-wrapper p .home-text-3{
+    font-size: .8rem;
+    line-height: .6rem;
+  }
+
+  .home-section{
+    min-height: 420px;
+    background-size: 1044px;
+    background-position: center 50px;
+  }
+
+
+  .quienes-somos .centered-section{
+    background-position: bottom right;
+    background-size: 600px;
+    min-height: 530px;
+  }
+
+  .tratamientos ul li{
+    font-size: .7rem;
+  }
+
+  .tratamientos img{
+    width: 50%;
+    padding-top: 25px;
+  }
+
+  .tecnologia .centered-section{
+    background-position: bottom left;
+    background-size: 600px;
+    min-height: 945px;
+  }
+  .tecnologia ul li{
+    font-size: .7rem;
+  }
+
+  .nuestros-equipos .centered-section{
+    background-position: bottom right;
+    background-size: 600px;
+    min-height: 750px;
+  }
+
+  .nuestros-equipos .centered-section div p{
+    padding-top: 0;
+  }
+
+
+  .footer p{
+    font-size: .7rem;
+  }
+  .footer img{
+    width: 110px;
+  }
+
+}
+
+
+
+@include iphone {
+  @include moviles ();
+}
+
+/*MINI TABLET-----------------------------------------------------------------------------------------------*/
+@include minitablet {
+
+  .menu-section {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .body-health-logo img{
+    width: 130px;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+    img{
+      width: 20px;
+    }
+  }
+
+  .menu-right{
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 100%;
+  }
+
+  .menu-social{
+    position: absolute;
+    margin-bottom: 3px;
+    margin-top: 13px;
+    top:190px;
+    margin-left: 5px;
+
+    li{
+      margin-left: 10px;
+    }
+  }
+
+
+  .menu-general {
+
+    margin-left: 0;
+
+    li {
+      display: block;
+      margin-left: 0;
+      padding: 5px 0 5px 15px;
+      text-align: left;
+      width: 250px;
+      border-top: 1px solid #d0cad0;
+
+    }
+
+    .tohide{
+      display: none;
+    }
+
+  }
+
+  .menu-general li:nth-child(7){
+    border-bottom: 1px solid #d0cad0;
+  }
+
+
+  .size-1-2{
+    font-size: 1rem;
+  }
+  .size-1-1{
+    font-size: .9rem;
+  }
+  .size-1-0{
+    font-size: .8rem;
+  }
+  .size-0-9{
+    font-size: .7rem;
+  }
+
+  .home-section .home-content-wrapper p{
+    line-height: 1rem;
+  }
+  .home-section .home-content-wrapper p .home-text-1{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+  .home-section .home-content-wrapper p .home-text-2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .home-section .home-content-wrapper p .home-text-3{
+    font-size: .8rem;
+    line-height: .6rem;
+  }
+
+  .home-section{
+    min-height: 420px;
+    background-size: 1044px;
+    background-position: center 50px;
+  }
+
+
+  .quienes-somos .centered-section{
+    background-position: -270px bottom;
+    background-size: 800px;
+    min-height: 530px;
+  }
+
+  .tratamientos ul li{
+    font-size: .7rem;
+  }
+
+  .tratamientos img{
+    width: 70%;
+    padding-top: 25px;
+  }
+
+  .tecnologia .centered-section{
+    background-position: 160px bottom;
+    background-size: 600px;
+    min-height: 860px;
+  }
+  .tecnologia ul li{
+    font-size: .7rem;
+  }
+
+  .nuestros-equipos .centered-section{
+    background-position: -120px bottom;
+    background-size: 600px;
+    min-height: 750px;
+  }
+
+  .nuestros-equipos .centered-section div p{
+    padding-top: 0;
+  }
+
+
+  .footer p{
+    font-size: .7rem;
+  }
+  .footer img{
+    width: 110px;
+  }
+
+}
+
+/*TABLET-----------------------------------------------------------------------------------------------*/
+@include tablet {
+
+  .quienes-somos .centered-section{
+    background-position: -230px bottom;
+    background-size: 800px;
+    min-height: 580px;
+  }
+
+
+  .tecnologia .centered-section{
+    background-position: 200px bottom;
+    background-size: 600px;
+    min-height: 960px;
+  }
+
+  .nuestros-equipos .centered-section{
+    background-position: -70px bottom;
+    background-size: 600px;
+    min-height: 750px;
+  }
+  .nuestros-equipos .centered-section div p{
+    padding-top: 0;
+  }
+
+}
+
+/*DESKTOP-----------------------------------------------------------------------------------------------*/
+@include desktop {
+
+
+}
+
+/*LARGER-----------------------------------------------------------------------------------------------*/
+@include larger {
+
+}
+
+
+

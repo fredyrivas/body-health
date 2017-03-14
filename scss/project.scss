@@ -1,0 +1,374 @@
+
+body {
+
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('../fonts/Raleway-Bold.ttf');
+  src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'raleway-italic';
+  src: url('../fonts/Raleway-Italic.ttf');
+  src: url('../fonts/raleway-italic-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'raleway-light';
+  src: url('../fonts/Raleway-Light.ttf');
+  src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'raleway-medium';
+  src: url('../fonts/Raleway-Medium.ttf');
+  src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'raleway-regular';
+  src: url('../fonts/Raleway-Regular.ttf');
+  src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+  url('../fonts/raleway-regular-webfont.woff') format('woff');
+}
+
+.font-bold {
+  font-family: 'raleway-bold';
+}
+
+.font-italic {
+  font-family: 'raleway-italic';
+}
+
+.font-light {
+  font-family: 'raleway-light';
+}
+
+.font-medium {
+  font-family: 'raleway-medium';
+}
+
+.font-regular {
+  font-family: 'raleway-regular';
+}
+
+.grey-color {
+  color: #44454d;
+}
+
+.purple-color{
+  color: #5c3467;
+}
+
+
+
+
+/*=========================================================================*/
+
+.menu-section {
+  background-color: rgba(255, 255, 255, 0.80);
+  top: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+
+.body-health-logo img{
+  width: 230px;
+  @include vertical-center;
+  cursor: pointer;
+}
+
+.menu-right{
+  float: right;
+  text-align: right;
+}
+
+.menu-social{
+  list-style: none;
+  margin-bottom: 3px;
+  margin-top: 13px;
+
+  li{
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.menu-general{
+  list-style: none;
+
+  li{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'raleway-regular';
+    font-size: .8rem;
+    color: #624769;
+    cursor: pointer;
+  }
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+/*=========================================================================*/
+
+.home-section {
+  background-image: url("../images/home-bg.png");
+  background-size: cover;
+  background-position: top center;
+  min-height: 600px;
+  position: relative;
+
+  .home-content-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    p {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      margin: 0 auto;
+
+      .home-text-1 {
+        font-family: 'raleway-bold';
+        font-size: 2.5rem;
+        color: #44454d;
+        display: block;
+        line-height: 2.5rem;
+      }
+      .home-text-2 {
+        font-family: 'raleway-light';
+        font-size: 2.2rem;
+        color: #44454d;
+        display: block;
+        line-height: 2.5rem;
+      }
+      .home-text-3 {
+        font-family: 'raleway-regular';
+        font-size: 1rem;
+        color: #44454d;
+      }
+
+    }
+
+    img {
+      width: 30px;
+      padding: 30px 0;
+    }
+  }
+
+}
+
+
+/*=========================================================================*/
+
+.home-experiencia {
+  background-color: #333034 !important;
+  padding: 30px 0;
+
+  p {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+  }
+  p:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  p:nth-child(2) {
+    line-height: 1rem;
+  }
+}
+
+
+/*=========================================================================*/
+
+
+.quienes-somos {
+
+  background-color: #e3e6ea;
+
+  .centered-section {
+
+    background-image: url("../images/quienes-somos-picture.png");
+    background-position: top right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: table;
+    min-height: 500px;
+  }
+
+}
+
+
+/*=========================================================================*/
+
+.tratamientos{
+  background-color: #87d2f4;
+
+  ul{
+    list-style-image: url("../images/bullet.png");
+    margin-left: 13px;
+
+    li{
+      font-family: 'raleway-regular';
+      font-size: 1rem;
+      color: #44454d;
+      border-bottom: 1px #85b8db solid;
+      padding: 2px 0;
+    }
+  }
+}
+
+
+
+/*=========================================================================*/
+
+.tecnologia{
+  background-color: #b3e3e3;
+
+  .tec-p-1{
+    line-height: 17px;
+  }
+
+  hr{
+    border-bottom: 1px solid #9fc7c7;
+  }
+
+  ul{
+    list-style-image: url("../images/bullet.png");
+    margin-left: 13px;
+    margin-bottom: 50px;
+
+    li{
+      font-family: 'raleway-regular';
+      font-size: 1rem;
+      color: #44454d;
+      border-bottom: 1px #9fc7c7 solid;
+      padding: 2px 0;
+    }
+  }
+
+  .centered-section{
+    background-image: url("../images/tecnologia-picture.png");
+    background-position: top left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: table;
+  }
+
+}
+
+
+/*=========================================================================*/
+
+.nuestros-equipos{
+  background-color: #fff;
+  margin-top: 50px;
+
+  .centered-section {
+
+    background-image: url("../images/nuestros-equipos-picture.png");
+    background-position: right top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: table;
+    min-height: 600px;
+
+
+    ul{
+      list-style-image: url("../images/bullet.png");
+      margin-left: 13px;
+      margin-bottom: 50px;
+
+      li{
+        font-family: 'raleway-regular';
+        font-size: 1rem;
+        color: #44454d;
+        border-bottom: 1px #9fc7c7 solid;
+        padding: 2px 0;
+      }
+    }
+
+
+  }
+}
+
+/*=========================================================================*/
+
+.contacto{
+  background-color: #f4f7fa;
+
+  .enviar-btn{
+    background-color: #e0e5ea;
+    padding: 4px 12px;
+    width: 95px;
+
+    a{
+      color: #9da2a8;
+    }
+    span{
+      color: #9da2a8;
+    }
+  }
+
+}
+
+
+.map-container{
+  min-height: 400px;
+  padding: 50px 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+input, textarea{
+  background-color: #e0e5ea !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #9da2a8 !important;
+}
+
+
+/*=========================================================================*/
+
+.footer{
+  text-align: center;
+  background-color: #333034;
+  min-height: 300px;
+
+  img{
+    width: 230px;
+  }
+
+  hr{
+    border-bottom: 1px solid #a7cbcb;
+  }
+
+  p{
+    font-family: 'raleway-regular';
+    font-size: .8rem;
+    color: #a7cbcb;
+  }
+}
+
+
