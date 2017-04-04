@@ -5,6 +5,9 @@ $(document).ready(function () {
     setMenu();
     singleButtonEvents();
     handleMenuMobile();
+
+
+    $('.enviar-btn').bind('click', sendContactmail);
 });
 
 
@@ -98,6 +101,35 @@ function reviewIsMobile() {
     var isMobile;
     if ($(window).width() < 768) {isMobile = true;} else {isMobile = false;}
     return isMobile;
+}
+
+
+
+
+function sendContactmail() {
+
+    $.ajax({
+        url: "sendmail.php",
+        data: {
+            humanname: $('#bhname').val(),
+            humanmail: $('#bhemail').val(),
+            humanphone: $('#bhphone').val(),
+            humancomments: $('#bhcomments').val()
+        },
+        type: "post",
+        success: function (response) {
+            console.log(response);
+
+            $('.message-sent').css('display', 'block');
+
+            if (response == 'sent') {
+                $('#bhname').val('');
+                $('#bhemail').val('');
+                $('#bhphone').val('');
+                $('#bhcomments').val('');
+            }
+        }
+    });
 }
 
 
